@@ -9,12 +9,12 @@
 using static System.Console;
 Clear();
 
-Console.WriteLine("Enter the size of the array");
+WriteLine("Enter the size of the array");
 int size = int.Parse(ReadLine()!);
 int[] numbers = new int[size];
 
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("Our array: ");
+WriteLine("Our array: ");
 PrintArray(numbers);
 
 
@@ -23,7 +23,7 @@ for (int j = 0; j < numbers.Length; j += 2)
     sum = sum + numbers[j];
 
 
-Console.WriteLine($"All {numbers.Length} numbers, the sum of the numbers in odd positions = {sum}");
+WriteLine($"All {numbers.Length} numbers, the sum of the numbers in odd positions = {sum}");
 
 
 void FillArrayRandomNumbers(int[] numbers)
