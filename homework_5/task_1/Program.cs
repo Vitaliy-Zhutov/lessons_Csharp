@@ -8,12 +8,12 @@
 using static System.Console;
 Clear();
 
-Console.WriteLine("Enter the size of the array");
+WriteLine("Enter the size of the array");
 int size = int.Parse(ReadLine()!);
 int[] numbers = new int[size];
 
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("Our array: ");
+WriteLine("Our array: ");
 PrintArray(numbers);
 
 
@@ -23,7 +23,7 @@ for (int j = 0; j < numbers.Length; j++)
         count++;
 
 
-Console.WriteLine($"All {numbers.Length} numbers, {count} even numbers");
+WriteLine($"All {numbers.Length} numbers, {count} even numbers");
 
 
 void FillArrayRandomNumbers(int[] numbers)
