@@ -18,10 +18,8 @@ int GetSum (int N)
 
     while (N > 0)
     {
-        {
         resultSum *= N;
         N--;
-        }
     }
 
     return resultSum;

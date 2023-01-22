@@ -15,7 +15,6 @@ if (Number >= 1 && Number <= 5)
 {
     WriteLine("Это рабочий день");
 }
-
 else if (Number >= 6 && Number <= 7)
 {
     WriteLine("Это выходной день");
