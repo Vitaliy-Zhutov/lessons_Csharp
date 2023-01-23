@@ -9,7 +9,7 @@ using static System.Console;
 // Clear();
 
 
-Console.Write("Enter the numbers separated by a space: ");
+Write("Enter the numbers separated by a space: ");
 
 int[] numbers = StringToNum(Console.ReadLine()!);
 PrintArray(numbers);
@@ -23,8 +23,8 @@ for (int i = 0; i < numbers.Length; i++)
         sum++;
     }
 }
-Console.WriteLine();
-Console.WriteLine($"The number of numbers greater than zero = {sum}");
+WriteLine();
+WriteLine($"The number of numbers greater than zero = {sum}");
 
 
 int[] StringToNum(string input)
