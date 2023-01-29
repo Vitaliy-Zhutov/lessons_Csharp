@@ -1,5 +1,5 @@
 ﻿/* 
-Напишите программу реализующую методы, формирования двумерного массива 
+Задача 52. Напишите программу реализующую методы, формирования двумерного массива 
 и массива средних арифметических значений каждого столбца.
 Например, задан массив:
 1 4 7 2
@@ -11,14 +11,14 @@
 using static System.Console;
 Clear();
 
-int rows = ReadInt("Введите количество строк: ");
-int colums = ReadInt("Введите количество столбцов: ");
+int rows = ReadInt("Enter the number of rows: ");
+int colums = ReadInt("Enter the number of columns: ");
 
 int[,] numbers = new int[rows, colums];
 
 double[] avgNumbers = new double[numbers.GetLength(1)];
 
-GetMatrixArra(numbers);
+GetMatrixArray(numbers);
 WriteLine();
 PrintMatrixArray(numbers);
 
@@ -37,7 +37,7 @@ WriteLine();
 PrintResultArray(avgNumbers);
 
 
-void GetMatrixArra(int[,] array)
+void GetMatrixArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -74,6 +74,6 @@ void PrintResultArray(double[] array)
 
 int ReadInt(string message)
 {
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
+    Write(message);
+    return Convert.ToInt32(ReadLine());
 }
